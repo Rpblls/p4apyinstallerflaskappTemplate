@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+      
+        #butt1{display:none;}
+
+
+
+
+
+    
+
+
+</style>
+</head>
+{% extends 'jstyle.html' %}
+{% block style %}
+<body>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <div class='pment'>
+ 
+    <h1>Bookmarks</h1>
+    {% for item in values %}
+
+<div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item"><span class="badge badge-primary"><a >{{item.id}}  </span><a href="{{item.url}}"> {{item.url}} </a></li>
+                </div>
+         </ul></div>
+
+
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="alert alert-info alert-dismissable" id="view">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true" onclick="this.parentNode.parentNode.removeChild(this.parentNode);">&times;</button>
+              <strong>{{item.picker}} </strong> {{item.description}}
+            </div></div></div></ul>
+
+            </ul>
+    </div>
+    </div>
+
+    {% endfor %}
+
+
+{% endblock %}
+</body>
+</html>

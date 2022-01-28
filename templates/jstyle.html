@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- css framework  -->
+<link rel="stylesheet" href = "/static/bootflat.min.css" >
+<link rel="stylesheet" href = "/static/bootflat.css">
+<link rel="stylesheet" href = "/static/bootflat.scss">
+<link rel="stylesheet" href = "/static/bootstrap.min.css" >
+    <!-- css framework  -->
+
+    <!-- css  -->
+
+    <style>
+body {background-color: #001730;
+color:white;
+}
+
+
+.container {width:330px;}
+#butt2 {float:left;margin:1px;}
+#butt1 {float:right;margin:1px;}
+#homebutt{float:left;margin:1px;}
+.pment {text-align:center;}</style>
+
+
+    <meta charset="UTF-8">
+</head>
+<body>
+{% block style %}
+{% endblock %}
+</body>
+<!--                      navigation buttons                     -->
+<footer>
+
+
+    <div class="container"
+
+
+        <p>
+        <form action="/sitelist">
+        <button id="butt1" class="btn btn-warning" onclick="/sitelist">view bookmarks </button>
+        </form>
+
+
+        <form action="/category">
+        <button id="butt2" class="btn btn-danger" onclick="/category">edit categories </button>
+        </form>
+
+    <form action="/">
+        <button id="homebutt" class="btn btn-primary">Add website </button>
+    </form>
+
+        </p>
+
+
+</div>
+<!--    javascript imports bootstrap/bootflat          -->
+    <script src="/static/bootstrap.min.js" ></script>
+<script src="/static/jquery.fs.stepper.min.js" ></script>
+<script src="/static/jquery.fs.selecter.min.js" ></script>
+<script src="/static/icheck.min.js" ></script>
+</footer>
+</html>

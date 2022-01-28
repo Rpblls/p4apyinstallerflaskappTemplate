@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+
+
+
+                                                <!-- css  -->
+                            <style>
+#homebutt{display:none;}
+body {background-color: #001730;
+color:white;
+}
+.container {margin-top:100px;}
+.container {width:330px;}
+#butt2 {float:left;margin:1px;}
+#butt1 {float:right;margin:1px;}
+#homebutt{float:left;margin:1px;}
+
+.pment {text-align:center;}
+                                                <!-- css  -->
+
+                            </style>
+    <!-- css  -->
+
+
+
+</head>
+<header>
+    {% extends 'jstyle.html' %}
+    {% block style %}
+
+</header>
+
+
+<body>
+
+<div class='pment'>
+
+    <form method="POST" action=''>
+        {{form.url.label}}
+            <br>
+
+        {{form.url}}
+        <br>
+        {{form.picker.label}}
+        <br>
+        {{form.picker}}
+        <br>
+        <br>
+        {{form.description.label}}
+        <br>
+        {{form.description}}
+        </div>
+        <div class="pment">
+            {{pform.boo}}
+            {{pform.password.label}}
+            <br>
+            {{pform.password}}
+            <br>
+        <p><button class='btn btn-primary' name="url">Submit</button></p>
+            </div>
+             </form>
+            {% for item in picker %}
+            {% endfor %}
+</body>
+<footer>
+     {% endblock %}
+</footer>
+</html>
